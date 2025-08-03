@@ -1,0 +1,69 @@
+#a=1
+#b=2
+#c=2+1
+#print(c)
+print("* + 7 8 9\n/ - 4 5 6\n 0  1 2 3")
+a=input()
+l=0
+w=[]
+o=[0,1,2,3,4,5,6,7,8,9]
+f=[]
+h=""
+
+for i in a:
+     if i=="+" or i=="-" or i=="*" or i=="/":
+         break
+     else:
+         f.append(i)
+
+
+for i in a:
+     if l==1:
+         w.append(i)
+     if i=="+" or i=="-" or i=="*" or i=="/":
+             h=i  
+             l=1
+             pass
+
+
+if h=="+": 
+                                    y=""
+                                    for b in f:
+                                      y=y+b
+                                      n=""
+                                    for u in w:
+                                      n=n+u
+                                    if h=="+":
+                                        s=int(y)+int(n)
+                                        print(s)
+elif h=="-":      
+                               y=""
+                               for b in f:
+                                      y=y+b  
+                                      n=""
+                               for u in w:
+                                      n=n+u
+                               if h=="-":
+                                        s=int(y)-int(n)
+                                        print(s)          
+elif h=="*":      
+                               y=""
+                               for b in f:
+                                      y=y+b  
+                                      n=""
+                               for u in w:
+                                      n=n+u
+                               if h=="*":
+                                        s=int(y)*int(n)
+                                        print(s)
+                                        
+elif h=="/":      
+                               y=""
+                               for b in f:
+                                      y=y+b  
+                                      n=""
+                               for u in w:
+                                      n=n+u
+                               if h=="/":
+                                        s=int(y)/int(n)
+                                        print(s)
