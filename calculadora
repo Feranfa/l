@@ -1,5 +1,7 @@
 
-#a=1
+             
+                                                                           
+                                      #a=1
 #b=2
 #c=2+1
 #print(c)
@@ -7,151 +9,166 @@ print("* + 7 8 9\n/ - 4 5 6\n 0  1 2 3")
 a=input()
 l=0
 w=[]
-o=[0,1,2,3,4,5,6,7,8,9]
+o=[0,1,2,3,4,5,6,7,8,9,"+","-","*","/","."]
 f=[]
 h=""
-for i in a:
-     if i=="+" or i=="-" or i=="*" or i=="/":
-         break
-     else:
-         f.append(i)
-
-
-for i in a:
-     if l==1:
-         w.append(i)
-     if i=="+" or i=="-" or i=="*" or i=="/":
-             h=i  
-             l=1
-             pass
-
-
-if h=="+": 
-                                    y=""
-                                    for b in f:
-                                      y=y+b
-                                      n=""
-                                    for u in w:
-                                      n=n+u
-                                    if h=="+":
-                                        za=0
-                                        zb=0
-                                        for x in y:
-                                            if x==".":
-                                                y=float(y)
-                                                za=1
-                                        for c in n:
-                                            if c==".":
-                                                n=float(n)
-                                                zb=1
-                                        
-                                        if za==1 and zb==0:
-                                            s=y+int(n) 
-                                            print(s)
-                                        elif zb==1 and za==0:
-                                            s=int(y)+n
-                                            print(s)
-                                        elif za==1 and zb==1:
-                                            s=y+n
-                                            print(s)
-                                        else:
-                                             s=int(y)+int(n)
-                                             print(s)
+k=0
+kk=0
+for ñ in o:
+    ñ=str(ñ)
+    for e in a:
+      if ñ==e:
+                kk=kk+1
+                if kk==len(a):
+                    k=1
+   
+    
+if k==1:                
+    for i in a:
+         if i=="+" or i=="-" or i=="*" or i=="/":
+             break
+         else:
+             f.append(i)
+    
+    
+    for i in a:
+         if l==1:
+             w.append(i)
+         if i=="+" or i=="-" or i=="*" or i=="/":
+                 h=i  
+                 l=1
+                 pass
+    
+    
+    if h=="+": 
+                                        y=""
+                                        for b in f:
+                                          y=y+b
+                                          n=""
+                                        for u in w:
+                                          n=n+u
+                                        if h=="+":
+                                            za=0
+                                            zb=0
+                                            for x in y:
+                                                if x==".":
+                                                    y=float(y)
+                                                    za=1
+                                            for c in n:
+                                                if c==".":
+                                                    n=float(n)
+                                                    zb=1
+                                            
+                                            if za==1 and zb==0:
+                                                s=y+int(n) 
+                                                print(s)
+                                            elif zb==1 and za==0:
+                                                s=int(y)+n
+                                                print(s)
+                                            elif za==1 and zb==1:
+                                                s=y+n
+                                                print(s)
+                                            else:
+                                                 s=int(y)+int(n)
+                                                 print(s)
+                                                 
+                                                 
+    elif h=="-":     
+                                   y=""
+                                   for b in f:
+                                          y=y+b  
+                                          n=""
+                                   for u in w:
+                                          n=n+u
+                                   if h=="-":
+                                            za=0
+                                            zb=0
+                                            for x in y:
+                                                if x==".":
+                                                    y=float(y)
+                                                    za=1
+                                            for c in n:
+                                                if c==".":
+                                                    n=float(n)
+                                                    zb=1
+                                            
+                                            if za==1 and zb==0:
+                                                s=y-int(n) 
+                                                print(s)
+                                            elif zb==1 and za==0:
+                                                s=int(y)-n
+                                                print(s)
+                                            elif za==1 and zb==1:
+                                                s=y-n
+                                                print(s)
+                                            else:
+                                                 s=int(y)-int(n)
+                                                 print(s)          
+    elif h=="*":      
+                                   y=""
+                                   for b in f:
+                                          y=y+b  
+                                          n=""
+                                   for u in w:
+                                          n=n+u
+                                   if h=="*":
+                                            za=0
+                                            zb=0
+                                            for x in y:
+                                                if x==".":
+                                                    y=float(y)
+                                                    za=1
+                                            for c in n:
+                                                if c==".":
+                                                    n=float(n)
+                                                    zb=1
+                                            
+                                            if za==1 and zb==0:
+                                                s=y*int(n) 
+                                                print(s)
+                                            elif zb==1 and za==0:
+                                                s=int(y)*n
+                                                print(s)
+                                            elif za==1 and zb==1:
+                                                s=y*n
+                                                print(s)
+                                            else:
+                                                 s=int(y)*int(n)
+                                                 print(s)
+                                            
+    elif h=="/":      
+                                   y=""
+                                   for b in f:
+                                          y=y+b  
+                                          n=""
+                                   for u in w:
+                                          n=n+u
+                                   if h=="/":
+                                            za=0
+                                            zb=0
+                                            for x in y:
+                                                if x==".":
+                                                    y=float(y)
+                                                    za=1
+                                            for c in n:
+                                                if c==".":
+                                                    n=float(n)
+                                                    zb=1
+                                            
+                                            if za==1 and zb==0:
+                                                s=y/int(n) 
+                                                print(s)
+                                            elif zb==1 and za==0:
+                                                s=int(y)/n
+                                                print(s)
+                                            elif za==1 and zb==1:
+                                                s=y/n
+                                                print(s)
+                                            else:
+                                                 s=int(y)/int(n)
+                                                 print(s)
+elif k==0:
+    print("wrong syntax")                                                                          
                                              
-                                             
-elif h=="-":     
-                               y=""
-                               for b in f:
-                                      y=y+b  
-                                      n=""
-                               for u in w:
-                                      n=n+u
-                               if h=="-":
-                                        za=0
-                                        zb=0
-                                        for x in y:
-                                            if x==".":
-                                                y=float(y)
-                                                za=1
-                                        for c in n:
-                                            if c==".":
-                                                n=float(n)
-                                                zb=1
-                                        
-                                        if za==1 and zb==0:
-                                            s=y-int(n) 
-                                            print(s)
-                                        elif zb==1 and za==0:
-                                            s=int(y)-n
-                                            print(s)
-                                        elif za==1 and zb==1:
-                                            s=y-n
-                                            print(s)
-                                        else:
-                                             s=int(y)-int(n)
-                                             print(s)          
-elif h=="*":      
-                               y=""
-                               for b in f:
-                                      y=y+b  
-                                      n=""
-                               for u in w:
-                                      n=n+u
-                               if h=="*":
-                                        za=0
-                                        zb=0
-                                        for x in y:
-                                            if x==".":
-                                                y=float(y)
-                                                za=1
-                                        for c in n:
-                                            if c==".":
-                                                n=float(n)
-                                                zb=1
-                                        
-                                        if za==1 and zb==0:
-                                            s=y*int(n) 
-                                            print(s)
-                                        elif zb==1 and za==0:
-                                            s=int(y)*n
-                                            print(s)
-                                        elif za==1 and zb==1:
-                                            s=y*n
-                                            print(s)
-                                        else:
-                                             s=int(y)*int(n)
-                                             print(s)
-                                        
-elif h=="/":      
-                               y=""
-                               for b in f:
-                                      y=y+b  
-                                      n=""
-                               for u in w:
-                                      n=n+u
-                               if h=="/":
-                                        za=0
-                                        zb=0
-                                        for x in y:
-                                            if x==".":
-                                                y=float(y)
-                                                za=1
-                                        for c in n:
-                                            if c==".":
-                                                n=float(n)
-                                                zb=1
-                                        
-                                        if za==1 and zb==0:
-                                            s=y/int(n) 
-                                            print(s)
-                                        elif zb==1 and za==0:
-                                            s=int(y)/n
-                                            print(s)
-                                        elif za==1 and zb==1:
-                                            s=y/n
-                                            print(s)
-                                        else:
-                                             s=int(y)/int(n)
-                                             print(s)
 
     
